@@ -99,7 +99,7 @@ body {
     font-size: 16px;
     margin: 25px 0 40px 0px;
     line-height: 1.2;
-    color: #ffffff;   
+    color: #ffffff;
 }
 
 
@@ -146,7 +146,7 @@ body {
 
 .box_img_languages div:nth-child(2) {
     background-image: url(/images/csslogo60px.png);
-    top: 55%;
+    top: 35%;
     left: 65%;
     animation: animate 7s linear alternate-reverse infinite;
 }
