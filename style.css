@@ -321,13 +321,13 @@ button:hover {
 }
 
 .wrapper-me {
+    background: linear-gradient(to bottom right, #563094 , #4b0082, #740074 , #9f149f , #740074, #4b0082 , #563094);
     position: relative;
     width: 350px;
     height: 470px;
     overflow: hidden;
     border-radius: 20px;
     box-shadow: 0 0 20px #000000;
-    background: #563094;
     display: grid;
     justify-content: center;
     align-items: start;
@@ -665,23 +665,6 @@ button:hover {
 .wrapper-pojects:not(hover) {
     animation: hover-out ease-in-out .2s;
     animation-fill-mode: both;
-}
-
-
-.wrapper-me {
-    position: relative;
-    width: 350px;
-    height: 470px;
-    overflow: hidden;
-    border-radius: 20px;
-    box-shadow: 0 0 20px #000000;
-    background: #563094;
-    display: grid;
-    justify-content: center;
-    align-items: start;
-    flex-direction: column;
-    color: #fff;
-    margin-top: 50px;
 }
 
 details {
