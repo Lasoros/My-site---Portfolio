@@ -672,6 +672,23 @@ details {
 }
 
 
+@media (max-width: 400px) {
+    .wrapper-contact{
+        overflow: scroll;
+    }
+}
+
+@media (max-width: 425px) {
+    .wrapper-pojects{
+        margin-top: 0;
+        top: 150px;
+    }
+
+    .wrapper-contact {
+        top: 150px;
+    }
+}
+
 @media (max-width: 600px) {
 
     body {
@@ -740,5 +757,17 @@ details {
         grid-template: auto / 50% 50%;
     }
     
+
+  }
+
+  @media (width: 1024px) {
+    
+    .container-languages {
+        grid-template: auto / 50% 50%;
+    }
+    
+    .wrapper-background {
+        padding-bottom: 1330px;
+    }
 
   }
