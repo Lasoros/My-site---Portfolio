@@ -356,7 +356,7 @@ button:hover {
     text-align: center;
     padding: 20px;
     transition: background-color 0.3s ease-out;
-    max-height: 300px;
+    max-height: 330px;
 }
 
 .wrapper-faq summary {
