@@ -572,6 +572,22 @@ button:hover {
     
 }
 
+#wrapper-contact {
+    animation: FadeIn 5s ease forwards; 
+}
+
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+        transform: translateZ(-90%);
+    }
+    
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
 .box-contact h1{
     color: #d4b4ee;
 }
