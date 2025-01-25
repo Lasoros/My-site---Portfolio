@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     display: grid;
-    font-family: 'Cinzel','Orbitron','Courier New', Courier, monospace;
+    font-family: 'Cinzel','Orbitron','Courier New', Courier, monospace; 
 }
 
 .container {
@@ -60,11 +60,10 @@ body {
     flex-grow: 0;
     z-index: 1;
     text-align: center;
-    
 }
 
 .box-header h1{
-    font-size: 2.5rem;
+    font-size: 40px;
     margin: 25px 0 -15px 0px;
     line-height: 1.0;
     color: #fffffff5;
@@ -76,7 +75,7 @@ body {
 }
 
 .box-header h2{
-    font-size: 1.2rem;
+    font-size: 20px;
     line-height: 1.2;
     color: #fffffff5;
     font-family: 'Cinzel';
@@ -86,12 +85,16 @@ body {
     padding: 10px;
     text-align: left;
     z-index: 1;
+    font-size: 1rem;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
 
 .box-footer{
     flex-grow: 0;
     z-index: 1;
     text-align: center;
+    /* overflow: hidden; */
     /* width: 100%; */
 }
 
@@ -104,7 +107,7 @@ body {
 
 
 .box-footer h2{
-    font-size: 1.8rem;
+    font-size: 29px;
     margin: 25px 0 40px 0px;
     line-height: 1.2;
     color: #ffffff; 
@@ -334,6 +337,7 @@ button:hover {
     flex-direction: column;
     color: #fff;
     margin-top: 50px;
+    font-size: 25px;
 }
 
 .container-faq {
@@ -676,6 +680,7 @@ button:hover {
 .wrapper-pojects:hover {
     animation: project-hover ease-in-out .55s;
     animation-fill-mode: forwards;
+    z-index: 2;
 }
 
 .wrapper-pojects:not(hover) {
@@ -687,10 +692,24 @@ details {
     z-index: 1;
 }
 
+@media (max-width: 320px) {
+    .wrapper-contact{
+        overflow: scroll;
+    }
+
+    .wrapper-background {
+        width: 120%;
+    }
+
+    .wrapper-pojects:hover {
+        /* animation: none; */
+    }
+
+}
 
 @media (max-width: 400px) {
     .wrapper-contact{
-        overflow: show;
+        overflow: scroll;
     }
 
     .wrapper-background {
@@ -707,6 +726,7 @@ details {
 
     .wrapper-contact {
         top: 150px;
+        overflow: visible;
     }
 }
 
@@ -747,6 +767,7 @@ details {
 
     .container-faq {
         width: auto;
+        top: 25px;
     }
 
     .wrapper-faq {
@@ -776,8 +797,15 @@ details {
     
     .container-languages {
         grid-template: auto / 50% 50%;
+        column-gap: 18%;
+    }
+
+    .wrapper-background {
+        width: 124vw;
+        height: 150vh;
     }
     
+    /* tablet fix, appears to be good 01/25/2025 */
 
   }
 
@@ -796,3 +824,19 @@ details {
     }
 
   }
+
+  /* @media (width: 1366px) {
+    
+    .container-languages {
+        grid-template: auto / 50% 50%;
+    }
+    
+    .wrapper-background {
+        padding-bottom: 1330px;
+    }
+
+    .box-footer{
+        margin: 10px 0 40px 0;
+    }
+  } */
+/* fix above not width */
