@@ -802,7 +802,7 @@ details {
 
     .wrapper-background {
         width: 124vw;
-        height: 150vh;
+        height: 155vh;
     }
     
     /* tablet fix, appears to be good 01/25/2025 */
@@ -824,6 +824,23 @@ details {
     }
 
   }
+
+  @media (width: 1280px) {
+
+    .container-languages {
+        grid-template: auto / 50% 50%;
+    }
+    
+    .wrapper-background {
+        padding-bottom: 1330px;
+    }
+
+    .box-footer{
+        margin: 10px 0 40px 0;
+    }
+
+  }
+
 
   /* @media (width: 1366px) {
     
