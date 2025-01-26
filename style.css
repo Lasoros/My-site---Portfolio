@@ -726,7 +726,7 @@ details {
 
     .wrapper-contact {
         top: 150px;
-        overflow: visible;
+        overflow: scroll;
     }
 }
 
